@@ -1,0 +1,218 @@
+@import url("../fonts/fonts.css?family=SF New Republic");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #B6EEFF;
+}
+
+#main .baner-img img {
+  width: 80%;
+  height: auto;
+}
+
+.form-group {
+  position: relative;
+  text-align: left;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+.form-group .focused .form-label {
+  transform: translateY(-130%);
+}
+.form-group .form-label {
+  background-color: #B6EEFF;
+  margin-left: 10px;
+  position: absolute;
+  left: 0;
+  top: 20px;
+  z-index: 10;
+  transition: transform 150ms ease-out;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  padding: 0px 5px;
+}
+
+.focused .form-label {
+  transform: translateY(-130%);
+}
+
+input[type=text],
+input[type=number],
+input[type=email] {
+  background: transparent;
+  border: 2px solid rgba(177, 174, 174, 0.6039215686);
+  border-radius: 5px;
+  width: 100%;
+  height: 70px;
+  position: relative;
+  padding: 12px 10px 5px 5px;
+  transition: border 150ms ease-out;
+}
+input[type=text]:focus,
+input[type=number]:focus,
+input[type=email]:focus {
+  border: 2px solid blue;
+}
+
+.form-input.filled {
+  border: 2px solid blue;
+}
+
+.icon-btn-head {
+  color: #0792B0;
+  text-align: left;
+  width: 100%;
+  margin-left: 5%;
+}
+
+.aditional-data {
+  width: 100%;
+  margin-top: 20px;
+}
+.aditional-data .radio-btns-group {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+.aditional-data input {
+  display: none;
+  position: absolute;
+}
+.aditional-data .tab {
+  min-width: 100%;
+  display: block;
+  transition: all 2s cubic-bezier(0.17, 0.84, 0.07, 1.11);
+}
+.aditional-data .form-group2 {
+  justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+}
+.aditional-data .form-group2 .icon-btn {
+  flex: 0 0 50%;
+}
+.aditional-data .form-group2 .icon-btn .icon-content {
+  height: 89px;
+  margin: 5px;
+  border-radius: 13px;
+  background-color: rgba(177, 174, 174, 0.6039215686);
+  text-align: center;
+  line-height: 89px;
+  cursor: pointer;
+  transition: background-color 0.5s ease-in-out;
+}
+.aditional-data .form-group2 img {
+  height: 40px;
+  transition: filter 0.5s ease-in;
+}
+.aditional-data .form-group2 span {
+  font-size: 20px;
+  font-weight: 400;
+  transition: color 0.5s ease-in-out;
+}
+.aditional-data img {
+  cursor: pointer;
+  border: 5px solid transparent;
+}
+.aditional-data .radio-label {
+  width: 100px;
+  height: 100px;
+}
+.aditional-data .bnts-slide {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 10px;
+}
+.aditional-data .bnts-slide button {
+  width: 107px;
+  height: 30px;
+  border-radius: 9px;
+  background-color: #0792B0;
+  color: #B6EEFF;
+  border: none;
+}
+.aditional-data .form-group3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.aditional-data .form-group3 .icon-btn {
+  flex: 0 0 33.333333%;
+}
+.aditional-data .form-group3 .icon-btn .icon-content {
+  width: 90%;
+  height: 89px;
+  border-radius: 13px;
+  background-color: rgba(177, 174, 174, 0.6039215686);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  transition: background-color 0.5s ease-in-out;
+}
+.aditional-data .form-group3 .icon-btn .icon-content span {
+  font-size: 20px;
+  line-height: 20px;
+  transition: color 0.5s ease-in-out;
+}
+.aditional-data input:checked + .icon-content {
+  border-radius: 10px;
+  background-color: #48dbfb !important;
+}
+.aditional-data input:checked + .icon-content img {
+  filter: brightness(200%) opacity(60%);
+}
+.aditional-data input:checked + .icon-content span {
+  color: #B6EEFF;
+}
+
+.footer {
+  margin-top: 100px;
+  font-family: "SF New Republic";
+}
+.footer .brand-name {
+  font-weight: 700;
+  font-size: 35px;
+  margin-bottom: 0;
+  font-family: "SF New Republic";
+  font-weight: bolder;
+}
+.footer h6 {
+  font-weight: 400;
+  font-size: 15px;
+}
+
+#finish-res {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background-color: #B6EEFF;
+  z-index: 33333;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+#finish-res .image {
+  text-align: center;
+}
+#finish-res .image img {
+  width: 400.86px;
+  height: 222.65px;
+}
+#finish-res h1 {
+  text-align: center;
+  font-weight: bolder;
+}
+
+/**//*# sourceMappingURL=style.css.map */

@@ -1,0 +1,249 @@
+$bg: #010333;
+$color1: green;
+$color2: #ffffff;
+$color3:#94cdf3;
+$gray1:#a0a0a1;
+
+@font-face {
+    font-family: 'SF New Republic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SF New Republic'), url('../fonts/New Republic.woff') format('woff');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s ease-in;
+}
+
+body {
+    background-color: $bg;
+    display: flex;
+    justify-content: center;
+}
+
+#main {
+    min-width: 400px;
+    width: 820px;
+    min-height: 100vh;
+    // background-color: #ffffff42;
+
+    .header {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 200px;
+        // height: 180px;
+
+        object {
+            width: 60%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+    }
+
+
+    .title-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 65px;
+        margin-left: auto;
+        margin-right: auto;
+        width: max-content;
+        font-family: 'SF New Republic';
+        font-weight: bold;
+        font-size: 72px;
+        color: $color2;
+
+        h4 {
+            font-family: 'SF New Republic';
+            font-weight: normal;
+            font-size: 36px;
+            margin-top: -28px;
+        }
+
+    }
+
+    .whatsapp {
+        margin-top: 30px;
+        width: 70%;
+        border-radius: 20px;
+        background-color: $color2;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+
+        h6 {
+            font-size: 35px;
+            font-family: 'SF New Republic';
+            font-weight: normal;
+            color: $bg;
+        }
+
+        i {
+            font-size: 50px;
+            margin-right: 10px;
+            font-weight: bolder;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            color: $bg;
+        }
+
+        &:hover{
+            transform: scale(1.05);
+        }
+    }
+
+    .reg {
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 30px;
+
+        .reg-btn {
+            width: 45%;
+            text-decoration: none;
+            // height: 30px;
+            border-radius: 10px;
+            background-color: $color2;
+            display: flex;
+            justify-content: center;
+            color: $bg;
+            align-items: center;
+            font-size: 35px;
+            padding: 8px 0px;
+            cursor: pointer;
+            transition: all 0.2s ease-in;
+            
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+
+    }
+
+    .social-icons {
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+        color: $color2;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 80px;
+        font-size: 30px;
+
+        a{
+            text-decoration: none;
+            color: $color2;
+            i{
+                transition: all 0.2s ease-in-out;
+                &:hover{
+                    color: $color3;
+                }
+        }
+        }
+    }
+
+    .line {
+        width: 80%;
+        height: 5px;
+        border-radius: 5px;
+        background-color: $color2;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+
+    }
+
+    .footer {
+        width: 70%;
+        color: $color2;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        font-size: 20px;
+        font-family: 'SF New Republic';
+        font-weight: normal;
+    }
+}
+
+.disable-btn{
+    background-color: $gray1 !important;
+    transition: none !important;
+    &:hover{
+        transform: none !important;
+    }
+}
+
+
+
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+    #main {
+        
+        .title-text {
+            h1 {
+                font-size: 60px;
+            }
+
+            h4 {
+                font-size: 22px;
+                margin-top: -14px;
+            }
+        }
+
+        .whatsapp {
+            i {
+                font-size: 24px;
+            }
+
+            h6 {
+                font-size: 25px;
+            }
+        }
+
+        .reg {
+            .reg-btn {
+                font-size: 22px;
+            }
+        }
+
+        .footer{
+            h4{
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+   
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+    
+}
+
+// X-Large devices (large desktops, less than 1400px)
+@media (max-width: 1399.98px) {
+    #main {
+        .header {
+            margin-top: 50px;
+        }
+    }
+}

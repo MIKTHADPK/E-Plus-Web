@@ -1,0 +1,316 @@
+$bg-color: #B6EEFF;
+$gray1: #b1aeae9a;
+$gray2: #D9D9D9;
+$blue2: #0792B0;
+$blue3: #48dbfb;
+$cubic: cubic-bezier(.17, .84, .07, 1.11);
+
+
+
+
+@import url('../fonts/fonts.css?family=SF New Republic');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $bg-color;
+
+}
+
+#main {
+  .baner-img {
+    img {
+
+      width: 80%;
+      height: auto;
+    }
+  }
+}
+
+.form-group {
+  position: relative;
+  text-align: left;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+
+  // &+.form-group {
+  //   margin-top: 30px;
+  // }
+
+  .focused .form-label {
+    transform: translateY(-130%);
+
+  }
+
+  .form-label {
+    background-color: $bg-color;
+    margin-left: 10px;
+    position: absolute;
+    left: 0;
+    top: 20px;
+    z-index: 10;
+    transition: transform 150ms ease-out;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    padding: 0px 5px;
+  }
+
+}
+
+.focused .form-label {
+  transform: translateY(-130%);
+  // font-size: .75em;
+}
+
+input[type=text],
+input[type=number],
+input[type=email] {
+  background: transparent;
+  border: 2px solid $gray1;
+  border-radius: 5px;
+  width: 100%;
+  height: 70px;
+  position: relative;
+  padding: 12px 10px 5px 5px;
+  transition: border 150ms ease-out;
+  // z-index: 3;
+
+  &:focus {
+    border: 2px solid blue;
+  }
+}
+
+.form-input.filled {
+  border: 2px solid blue;
+}
+
+.icon-btn-head {
+  color: $blue2;
+  text-align: left;
+  width: 100%;
+  margin-left: 5%;
+}
+
+
+// slider form start
+.aditional-data {
+  width: 100%;
+  margin-top: 20px;
+
+  .radio-btns-group {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+  }
+
+  // .form-group {
+  //   position: relative;
+  //   text-align: left;
+  //   width: 90%;
+  //   margin-top: 20px;
+  // }
+
+  input {
+    display: none;
+    position: absolute;
+  }
+
+  .tab {
+    min-width: calc((100%)*1);
+    display: block;
+    transition: all 2s $cubic;
+    // width: 100%;
+  }
+
+  .form-group2 {
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+
+
+    .icon-btn {
+      flex: 0 0 50%;
+
+      .icon-content {
+        // width: 170px;
+        height: 89px;
+        margin: 5px;
+        border-radius: 13px;
+        background-color: $gray1;
+        text-align: center;
+        line-height: 89px;
+        cursor: pointer;
+        transition: background-color 0.5s ease-in-out;
+
+      }
+    }
+
+
+
+    img {
+      height: 40px;
+      transition: filter 0.5s ease-in;
+    }
+
+    span {
+      font-size: 20px;
+      font-weight: 400;
+      transition: color 0.5s ease-in-out;
+
+    }
+  }
+
+
+
+  img {
+    cursor: pointer;
+    border: 5px solid transparent;
+  }
+
+
+
+  .radio-label {
+    width: 100px;
+    height: 100px;
+  }
+
+  .bnts-slide {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10px;
+
+    button {
+      width: 107px;
+      height: 30px;
+      border-radius: 9px;
+      background-color: $blue2;
+      color: $bg-color;
+      border: none;
+      // position: relative;
+    }
+
+
+
+  }
+
+  .form-group3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .icon-btn {
+      flex: 0 0 33.333333%;
+
+      .icon-content {
+        width: 90%;
+        height: 89px;
+        border-radius: 13px;
+        background-color: $gray1;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+        transition: background-color 0.5s ease-in-out;
+
+        span {
+          font-size: 20px;
+          line-height: 20px;
+          transition: color 0.5s ease-in-out;
+        }
+      }
+    }
+  }
+
+  input:checked {
+    &+.icon-content {
+      // border-color: black;
+      border-radius: 10px;
+      background-color: $blue3 !important;
+
+      img {
+        // filter: invert(8%) sepia(100%) saturate(6481%) hue-rotate(246deg) brightness(102%) contrast(143%);
+        // fill: $bg-color;
+        filter: brightness(200%) opacity(60%);
+      }
+
+      span {
+        color: $bg-color;
+
+      }
+    }
+  }
+
+}
+
+.footer {
+  margin-top: 100px;
+  font-family: "SF New Republic";
+
+  .brand-name {
+    font-weight: 700;
+    font-size: 35px;
+    margin-bottom: 0;
+    font-family: "SF New Republic";
+    font-weight: bolder;
+  }
+
+  h6 {
+    font-weight: 400;
+    font-size: 15px;
+  }
+
+}
+
+
+#finish-res {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background-color: $bg-color;
+  z-index: 33333;
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+  .image {
+    // display: flex;
+    text-align: center;
+
+    img {
+      width: 400.86px;
+      height: 222.65px;
+    }
+  }
+
+  h1 {
+    text-align: center;
+    font-weight: bolder;
+  }
+}
+
+/**/
+@media (max-width: 420.98px) {}
+
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {}
+
+// X-Large devices (large desktops, less than 1400px)
+@media (max-width: 1399.98px) {}

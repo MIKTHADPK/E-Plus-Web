@@ -1,0 +1,184 @@
+@font-face {
+  font-family: "SF New Republic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("SF New Republic"), url("../fonts/New Republic.woff") format("woff");
+}
+* {
+  margin: 0;
+  padding: 0;
+  transition: all 0.3s ease-in;
+}
+
+body {
+  background-color: #010333;
+  display: flex;
+  justify-content: center;
+}
+
+#main {
+  min-width: 400px;
+  width: 820px;
+  min-height: 100vh;
+}
+#main .header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 200px;
+}
+#main .header object {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#main .title-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 65px;
+  margin-left: auto;
+  margin-right: auto;
+  width: -moz-max-content;
+  width: max-content;
+  font-family: "SF New Republic";
+  font-weight: bold;
+  font-size: 72px;
+  color: #ffffff;
+}
+#main .title-text h4 {
+  font-family: "SF New Republic";
+  font-weight: normal;
+  font-size: 36px;
+  margin-top: -28px;
+}
+#main .whatsapp {
+  margin-top: 30px;
+  width: 70%;
+  border-radius: 20px;
+  background-color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+#main .whatsapp h6 {
+  font-size: 35px;
+  font-family: "SF New Republic";
+  font-weight: normal;
+  color: #010333;
+}
+#main .whatsapp i {
+  font-size: 50px;
+  margin-right: 10px;
+  font-weight: bolder;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: #010333;
+}
+#main .whatsapp:hover {
+  transform: scale(1.05);
+}
+#main .reg {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 30px;
+}
+#main .reg .reg-btn {
+  width: 45%;
+  text-decoration: none;
+  border-radius: 10px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  color: #010333;
+  align-items: center;
+  font-size: 35px;
+  padding: 8px 0px;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+#main .reg .reg-btn:hover {
+  transform: scale(1.1);
+}
+#main .social-icons {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  color: #ffffff;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 80px;
+  font-size: 30px;
+}
+#main .social-icons a {
+  text-decoration: none;
+  color: #ffffff;
+}
+#main .social-icons a i {
+  transition: all 0.2s ease-in-out;
+}
+#main .social-icons a i:hover {
+  color: #94cdf3;
+}
+#main .line {
+  width: 80%;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+#main .footer {
+  width: 70%;
+  color: #ffffff;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-family: "SF New Republic";
+  font-weight: normal;
+}
+
+.disable-btn {
+  background-color: #a0a0a1 !important;
+  transition: none !important;
+}
+.disable-btn:hover {
+  transform: none !important;
+}
+
+@media (max-width: 575.98px) {
+  #main .title-text h1 {
+    font-size: 60px;
+  }
+  #main .title-text h4 {
+    font-size: 22px;
+    margin-top: -14px;
+  }
+  #main .whatsapp i {
+    font-size: 24px;
+  }
+  #main .whatsapp h6 {
+    font-size: 25px;
+  }
+  #main .reg .reg-btn {
+    font-size: 22px;
+  }
+  #main .footer h4 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 1399.98px) {
+  #main .header {
+    margin-top: 50px;
+  }
+}/*# sourceMappingURL=style.css.map */

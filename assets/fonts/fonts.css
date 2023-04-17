@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'SF New Republic';
+    /* font-style: normal; */
+    /* font-weight: normal; */
+    src: local('SF New Republic'), url('SF New Republic.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'SF New Republic Bold';
+    /* font-style: normal; */
+    /* font-weight: normal; */
+    src: local('SF New Republic Bold'), url('SF New Republic Bold.woff') format('woff');
+}
