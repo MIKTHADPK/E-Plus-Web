@@ -92,6 +92,7 @@ input[type=email]:focus {
   min-width: 100%;
   display: block;
   transition: all 2s cubic-bezier(0.17, 0.84, 0.07, 1.11);
+  margin: 0 30% 0 0%;
 }
 .aditional-data .form-group2 {
   justify-content: space-around;
@@ -102,7 +103,6 @@ input[type=email]:focus {
   flex: 0 0 50%;
 }
 .aditional-data .form-group2 .icon-btn .icon-content {
-  height: 89px;
   margin: 5px;
   border-radius: 13px;
   background-color: rgba(177, 174, 174, 0.6039215686);
@@ -215,4 +215,21 @@ input[type=email]:focus {
   font-weight: bolder;
 }
 
-/**//*# sourceMappingURL=style.css.map */
+/**/
+@media (max-width: 767.98px) {
+  #main .baner-img img {
+    width: 50%;
+    height: auto;
+  }
+  .form-group .form-label {
+    top: 12px;
+  }
+  input[type=text],
+  input[type=number],
+  input[type=email] {
+    height: 50px;
+  }
+  .aditional-data .form-group2 .icon-btn .icon-content {
+    line-height: 66px;
+  }
+}/*# sourceMappingURL=style.css.map */

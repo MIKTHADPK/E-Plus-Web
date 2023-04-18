@@ -34,7 +34,7 @@ function nextPrev(n) {
   }
   console.log(transform);
   for (i = 0; i < x.length; i++) {
-    x[i].style.transform = "translateX(" + (transform * 100) + "%)";
+    x[i].style.transform = "translateX(" + (transform * 130) + "%)";
   }
 
   currentTab = currentTab + n;

@@ -129,6 +129,7 @@ input[type=email] {
     min-width: calc((100%)*1);
     display: block;
     transition: all 2s $cubic;
+    margin: 0 30% 0 0%;
     // width: 100%;
   }
 
@@ -143,7 +144,7 @@ input[type=email] {
 
       .icon-content {
         // width: 170px;
-        height: 89px;
+        // height: 89px;
         margin: 5px;
         border-radius: 13px;
         background-color: $gray1;
@@ -304,7 +305,39 @@ input[type=email] {
 
 
 // Small devices (landscape phones, less than 768px)
-@media (max-width: 767.98px) {}
+@media (max-width: 767.98px) {
+  #main {
+    .baner-img {
+      img {
+        width: 50%;
+        height: auto;
+      }
+    }
+  }
+
+  .form-group {
+    .form-label {
+      top: 12px;
+    }
+  }
+
+  input[type=text],
+  input[type=number],
+  input[type=email] {
+    height: 50px;
+  }
+
+  .aditional-data {
+    .form-group2 {
+      .icon-btn {
+        .icon-content {
+          line-height: 66px;
+        }
+      }
+    }
+  }
+
+}
 
 // Medium devices (tablets, less than 992px)
 @media (max-width: 991.98px) {}
