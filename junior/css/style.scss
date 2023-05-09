@@ -1,0 +1,254 @@
+$color1_Light: #B6EEFF;
+$color1_Medium: #00C4FF;
+$color1_Dark: #39A1FF;
+$color2: #FFFFFF;
+$color3: aliceblue;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color: $color1_Light;
+    overflow-x: hidden;
+}
+
+.bg-design {
+    background-image: url(../images/desktop_bg_vectors.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.main {
+    background-color: aliceblue;
+    display: flex;
+    // border-radius: 129px 0 0 129px;
+    border-radius: 70px 0px 0px 70px/135px 0px 0px 135px;
+
+    .image-container {
+        height: 100vh;
+        width: 391.0773010253906px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        left: -30%;
+
+        img {
+            // height: 336px;
+            width: 391.0773010253906px;
+        }
+    }
+
+    .content {
+        display: block;
+        margin-left: -10%;
+
+        .brand-ribbon {
+            font-family: 'SF New Republic Bold';
+            display: flex;
+            justify-content: end;
+            margin-top: 5.27%;
+
+            .brand-name {
+                width: 55px;
+                text-align: center;
+                color: $color1_Dark;
+
+                h3 {
+                    margin: -10px;
+                    font-size: 60px;
+                    font-weight: 700;
+                }
+
+                h4 {
+                    margin: 0;
+                    font-size: 50px;
+                    font-weight: 400;
+                }
+            }
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+
+            a {
+                width: 458px;
+                background-color: $color1_Light;
+                color: black;
+                padding: 20px;
+                margin: 10px 0px;
+                font-family: 'Poppins', sans-serif;
+                font-size: 34px;
+                font-weight: 600;
+                border-radius: 21px;
+                text-decoration: none;
+
+
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+            }
+        }
+    }
+
+}
+
+
+
+// media queries
+
+//  xxl
+
+
+// X-Large devices (large desktops, less than 1400px) xl
+@media (max-width: 1399.98px) {
+    body {
+        margin: 0;
+    }
+}
+
+// Large devices (desktops, less than 1200px) lg
+@media (max-width: 1199.98px) {
+    body {
+        margin: 0;
+    }
+}
+
+// Medium devices (tablets, less than 992px) md
+@media (max-width: 991.98px) {
+    body {
+        border-color: $color3;
+    }
+
+    .bg-design {
+        height: 433px;
+        background-color: $color1_Light;
+        background-image: url(../images/Book_call_bg_design.svg);
+    }
+
+    .main {
+        border-radius: 71px 71px 0 0;
+        flex-direction: column;
+        margin-top: -40px;
+
+        .image-container {
+            position: relative;
+            width: auto;
+            height: auto;
+            left: 0;
+            top: -30%;
+            flex-direction: row;
+            margin-top: -145px;
+
+            img {
+                width: 310px;
+            }
+        }
+
+        .content {
+            margin-left: 0;
+
+            .brand-ribbon {
+                justify-content: center;
+
+                .brand-name {
+
+                    h3 {
+                        margin: -10px; //
+                    }
+
+                    h4 {
+                        margin: 0; //
+                    }
+                }
+            }
+
+            .buttons {
+                margin-top: 60px;
+                padding-bottom: 60px;
+
+                a {
+                    width: 458px; //
+                }
+            }
+        }
+    }
+}
+
+
+// Small devices (landscape phones, less than 768px) sm
+@media (max-width: 767.98px) {
+    .main {
+
+        .image-container {
+
+            img {
+                width: 300px;
+            }
+        }
+    }
+}
+
+
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+
+    body {
+        background-color: $color3;
+    }
+
+    .bg-design {
+        height: 160px;
+        background-color: $color1_Light;
+        background-image: url(../images/Book_call_bg_design.svg);
+    }
+
+    .main {
+
+        .image-container {
+            margin-top: -90px;
+
+            img {
+                width: 204px;
+            }
+        }
+
+        .content {
+
+            .brand-ribbon {
+                justify-content: center;
+
+                .brand-name {
+
+                    h3 {
+                        margin: -10px; //
+                        font-size: 50px;
+                    }
+
+                    h4 {
+                        margin: 0; //
+                        font-size: 40px;
+                    }
+                }
+            }
+
+            .buttons {
+                margin-top: 22px;
+
+                a {
+                    width: 223px; //
+                    font-size: 15px;
+                    height: 53px;
+                }
+            }
+        }
+    }
+}

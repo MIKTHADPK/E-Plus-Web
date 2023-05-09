@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #B6EEFF;
+  overflow-x: hidden;
+}
+
+.bg-design {
+  background-image: url(../images/desktop_bg_vectors.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.main {
+  background-color: aliceblue;
+  display: flex;
+  border-radius: 70px 0px 0px 70px/135px 0px 0px 135px;
+}
+.main .image-container {
+  height: 100vh;
+  width: 391.0773010254px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  left: -30%;
+}
+.main .image-container img {
+  width: 391.0773010254px;
+}
+.main .content {
+  display: block;
+  margin-left: -10%;
+}
+.main .content .brand-ribbon {
+  font-family: "SF New Republic Bold";
+  display: flex;
+  justify-content: end;
+  margin-top: 5.27%;
+}
+.main .content .brand-ribbon .brand-name {
+  width: 55px;
+  text-align: center;
+  color: #39A1FF;
+}
+.main .content .brand-ribbon .brand-name h3 {
+  margin: -10px;
+  font-size: 60px;
+  font-weight: 700;
+}
+.main .content .brand-ribbon .brand-name h4 {
+  margin: 0;
+  font-size: 50px;
+  font-weight: 400;
+}
+.main .content .buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+.main .content .buttons a {
+  width: 458px;
+  background-color: #B6EEFF;
+  color: black;
+  padding: 20px;
+  margin: 10px 0px;
+  font-family: "Poppins", sans-serif;
+  font-size: 34px;
+  font-weight: 600;
+  border-radius: 21px;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 1399.98px) {
+  body {
+    margin: 0;
+  }
+}
+@media (max-width: 1199.98px) {
+  body {
+    margin: 0;
+  }
+}
+@media (max-width: 991.98px) {
+  body {
+    border-color: aliceblue;
+  }
+  .bg-design {
+    height: 433px;
+    background-color: #B6EEFF;
+    background-image: url(../images/Book_call_bg_design.svg);
+  }
+  .main {
+    border-radius: 71px 71px 0 0;
+    flex-direction: column;
+    margin-top: -40px;
+  }
+  .main .image-container {
+    position: relative;
+    width: auto;
+    height: auto;
+    left: 0;
+    top: -30%;
+    flex-direction: row;
+    margin-top: -145px;
+  }
+  .main .image-container img {
+    width: 310px;
+  }
+  .main .content {
+    margin-left: 0;
+  }
+  .main .content .brand-ribbon {
+    justify-content: center;
+  }
+  .main .content .brand-ribbon .brand-name h3 {
+    margin: -10px;
+  }
+  .main .content .brand-ribbon .brand-name h4 {
+    margin: 0;
+  }
+  .main .content .buttons {
+    margin-top: 60px;
+    padding-bottom: 60px;
+  }
+  .main .content .buttons a {
+    width: 458px;
+  }
+}
+@media (max-width: 767.98px) {
+  .main .image-container img {
+    width: 300px;
+  }
+}
+@media (max-width: 575.98px) {
+  body {
+    background-color: aliceblue;
+  }
+  .bg-design {
+    height: 160px;
+    background-color: #B6EEFF;
+    background-image: url(../images/Book_call_bg_design.svg);
+  }
+  .main .image-container {
+    margin-top: -90px;
+  }
+  .main .image-container img {
+    width: 204px;
+  }
+  .main .content .brand-ribbon {
+    justify-content: center;
+  }
+  .main .content .brand-ribbon .brand-name h3 {
+    margin: -10px;
+    font-size: 50px;
+  }
+  .main .content .brand-ribbon .brand-name h4 {
+    margin: 0;
+    font-size: 40px;
+  }
+  .main .content .buttons {
+    margin-top: 22px;
+  }
+  .main .content .buttons a {
+    width: 223px;
+    font-size: 15px;
+    height: 53px;
+  }
+}/*# sourceMappingURL=style.css.map */
