@@ -30,7 +30,8 @@ body {
   left: -30%;
 }
 .main .image-container img {
-  width: 391.0773010254px;
+  max-width: 391.0773010254px;
+  max-height: 462px;
 }
 .main .content {
   display: block;
@@ -63,7 +64,7 @@ body {
   align-items: center;
   margin-top: 20px;
 }
-.main .content .buttons a {
+.main .content .buttons a, .main .content .buttons button {
   width: 458px;
   background-color: #B6EEFF;
   color: black;
@@ -77,6 +78,79 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border: none;
+}
+
+.form-group {
+  position: relative;
+  text-align: left;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+.form-group .focused .form-label {
+  transform: translateY(-130%);
+}
+.form-group .form-label {
+  background-color: aliceblue;
+  margin-left: 10px;
+  position: absolute;
+  left: 0;
+  top: 20px;
+  z-index: 10;
+  transition: transform 150ms ease-out;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  padding: 0px 5px;
+}
+
+.focused .form-label {
+  transform: translateY(-130%);
+  font-size: 18px;
+}
+
+input[type=text],
+input[type=number],
+input[type=email] {
+  background: transparent;
+  border: 2px solid #aeaeae;
+  border-radius: 5px;
+  width: 100%;
+  height: 70px;
+  position: relative;
+  padding: 12px 10px 5px 5px;
+  transition: border 150ms ease-out;
+  font-size: 22px;
+}
+input[type=text]:focus,
+input[type=number]:focus,
+input[type=email]:focus {
+  border: 2px solid blue;
+}
+
+.form-input.filled {
+  border: 2px solid blue;
+}
+
+.icon-btn-head {
+  color: #39A1FF;
+  text-align: left;
+  width: 100%;
+  margin-left: 5%;
+}
+
+select {
+  background: transparent;
+  border: 2px solid #aeaeae;
+  border-radius: 5px;
+  width: 100%;
+  height: 70px;
+  position: relative;
+  padding: 12px 10px 5px 5px;
+  transition: border 150ms ease-out;
+  font-size: 22px;
 }
 
 @media (max-width: 1399.98px) {
@@ -86,7 +160,7 @@ body {
 }
 @media (max-width: 1199.98px) {
   .main .image-container img {
-    width: 310px;
+    max-width: 310px;
   }
   .main .content {
     margin-left: -35%;
@@ -115,7 +189,7 @@ body {
     background-image: url(../images/Book_call_bg_design.svg);
   }
   .main {
-    border-radius: 71px 71px 0 0;
+    border-radius: 162px 162px 0 0;
     flex-direction: column;
     margin-top: -40px;
   }
@@ -136,6 +210,7 @@ body {
   }
   .main .content .brand-ribbon {
     justify-content: center;
+    margin-top: 30px;
   }
   .main .content .brand-ribbon .brand-name h3 {
     margin: -10px;
@@ -161,9 +236,12 @@ body {
     background-color: aliceblue;
   }
   .bg-design {
-    height: 160px;
+    height: 215px;
     background-color: #B6EEFF;
     background-image: url(../images/Book_call_bg_design.svg);
+  }
+  .main {
+    margin-top: -85px;
   }
   .main .image-container {
     margin-top: -90px;
