@@ -85,8 +85,24 @@ body {
   }
 }
 @media (max-width: 1199.98px) {
-  body {
+  .main .image-container img {
+    width: 310px;
+  }
+  .main .content {
+    margin-left: -35%;
+  }
+  .main .content .brand-ribbon {
+    margin-top: 135px;
+    justify-content: end;
+  }
+  .main .content .brand-ribbon .brand-name h3 {
+    margin: -10px;
+  }
+  .main .content .brand-ribbon .brand-name h4 {
     margin: 0;
+  }
+  .main .content .buttons a {
+    width: 458px;
   }
 }
 @media (max-width: 991.98px) {
