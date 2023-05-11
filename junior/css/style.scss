@@ -8,8 +8,8 @@ $gray1: #aeaeae;
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
-    line-height: 41px;
+    // font-family: 'Poppins', sans-serif;
+    // line-height: 41px;
 
 }
 
@@ -108,7 +108,7 @@ body {
 
 }
 
-
+// Form Design ~ Start
 .form-group {
     position: relative;
     text-align: left;
@@ -117,14 +117,11 @@ body {
     margin-right: auto;
     margin-top: 30px;
 
-    // &+.form-group {
-    //   margin-top: 30px;
+
+    // .focused .form-label {
+    //     transform: translateY(-130%);
+
     // }
-
-    .focused .form-label {
-        transform: translateY(-130%);
-
-    }
 
     .form-label {
         background-color: $color3;
@@ -172,13 +169,14 @@ input[type=email] {
     border: 2px solid blue;
 }
 
+/*
 .icon-btn-head {
     color: $color1_Dark;
     text-align: left;
     width: 100%;
     margin-left: 5%;
 }
-
+*/
 select {
     background: transparent;
     border: 2px solid $gray1;
@@ -191,6 +189,7 @@ select {
     font-size: 22px;
 }
 
+// Form design ~ End
 
 .notice {
     .notice_head {
@@ -201,20 +200,20 @@ select {
         font-weight: 600;
     }
 
+    .notice_content {
+        text-align: center;
+        font-size: 36px;
+        line-height: 54px;
+        font-weight: 500;
+    }
 }
 
-.notice_content {
-    text-align: center;
-    font-size: 36px;
-    line-height: 54px;
-    font-weight: 500;
-}
 
 .call_back_number {
     display: flex;
     flex-direction: row;
 
-    input[type=text]{
+    input[type=text] {
         font-size: 22px;
     }
 }
@@ -362,12 +361,14 @@ select {
 
     .main {
         margin-top: -85px;
+        border-radius: 103px 103px 0 0;
 
         .image-container {
             margin-top: -90px;
 
             img {
-                width: 204px;
+                max-width: 204px;
+                max-height: 205px;
             }
         }
 
@@ -399,7 +400,66 @@ select {
                     font-size: 15px;
                     height: 53px;
                 }
+
+                button {
+                    width: 334px;
+                    height: 40px;
+                    font-size: 20px;
+                }
             }
         }
     }
+
+
+    // Form design ~ Start
+
+    .form-group {
+        .form-label {
+            font-size: 18px;
+            top: 11px;
+        }
+    }
+
+    .focused .form-label {
+        transform: translateY(-100%);
+        font-size: 14px;
+    }
+
+    input[type=text],
+    input[type=number],
+    input[type=email] {
+        height: 46px;
+    }
+
+    select {
+        height: 46px;
+        font-size: 18px;
+    }
+
+    // Form design ~ End
+
+    .notice {
+        margin-bottom: 20px;
+        .notice_head {
+            line-height: 32px;
+            font-size: 36px;
+        }
+
+        .notice_content {
+            font-size: 15px;
+            line-height: 20px;
+        }
+    }
+
+
+    .call_back_number {
+        padding-left: 10px;
+        padding-right: 10px;
+
+        input[type=text] {
+            font-size: 22px;
+        }
+    }
+
+
 }

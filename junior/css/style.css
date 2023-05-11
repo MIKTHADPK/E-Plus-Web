@@ -1,8 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Poppins", sans-serif;
-  line-height: 41px;
 }
 
 body {
@@ -92,9 +90,6 @@ body {
   margin-right: auto;
   margin-top: 30px;
 }
-.form-group .focused .form-label {
-  transform: translateY(-130%);
-}
 .form-group .form-label {
   background-color: aliceblue;
   margin-left: 10px;
@@ -137,13 +132,14 @@ input[type=email]:focus {
   border: 2px solid blue;
 }
 
+/*
 .icon-btn-head {
-  color: #39A1FF;
-  text-align: left;
-  width: 100%;
-  margin-left: 5%;
+    color: $color1_Dark;
+    text-align: left;
+    width: 100%;
+    margin-left: 5%;
 }
-
+*/
 select {
   background: transparent;
   border: 2px solid #aeaeae;
@@ -163,8 +159,7 @@ select {
   font-size: 50px;
   font-weight: 600;
 }
-
-.notice_content {
+.notice .notice_content {
   text-align: center;
   font-size: 36px;
   line-height: 54px;
@@ -268,12 +263,14 @@ select {
   }
   .main {
     margin-top: -85px;
+    border-radius: 103px 103px 0 0;
   }
   .main .image-container {
     margin-top: -90px;
   }
   .main .image-container img {
-    width: 204px;
+    max-width: 204px;
+    max-height: 205px;
   }
   .main .content .brand-ribbon {
     justify-content: center;
@@ -293,5 +290,45 @@ select {
     width: 223px;
     font-size: 15px;
     height: 53px;
+  }
+  .main .content .buttons button {
+    width: 334px;
+    height: 40px;
+    font-size: 20px;
+  }
+  .form-group .form-label {
+    font-size: 18px;
+    top: 11px;
+  }
+  .focused .form-label {
+    transform: translateY(-100%);
+    font-size: 14px;
+  }
+  input[type=text],
+  input[type=number],
+  input[type=email] {
+    height: 46px;
+  }
+  select {
+    height: 46px;
+    font-size: 18px;
+  }
+  .notice {
+    margin-bottom: 20px;
+  }
+  .notice .notice_head {
+    line-height: 32px;
+    font-size: 36px;
+  }
+  .notice .notice_content {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .call_back_number {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .call_back_number input[type=text] {
+    font-size: 22px;
   }
 }/*# sourceMappingURL=style.css.map */
