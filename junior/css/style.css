@@ -1,6 +1,8 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "Poppins", sans-serif;
+  line-height: 41px;
 }
 
 body {
@@ -64,7 +66,8 @@ body {
   align-items: center;
   margin-top: 20px;
 }
-.main .content .buttons a, .main .content .buttons button {
+.main .content .buttons a,
+.main .content .buttons button {
   width: 458px;
   background-color: #B6EEFF;
   color: black;
@@ -150,6 +153,29 @@ select {
   position: relative;
   padding: 12px 10px 5px 5px;
   transition: border 150ms ease-out;
+  font-size: 22px;
+}
+
+.notice .notice_head {
+  text-align: center;
+  z-index: 0;
+  line-height: 55px;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.notice_content {
+  text-align: center;
+  font-size: 36px;
+  line-height: 54px;
+  font-weight: 500;
+}
+
+.call_back_number {
+  display: flex;
+  flex-direction: row;
+}
+.call_back_number input[type=text] {
   font-size: 22px;
 }
 
