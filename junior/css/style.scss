@@ -415,20 +415,21 @@ select {
 
     .form-group {
         .form-label {
-            font-size: 18px;
+            font-size: 15px;
             top: 11px;
         }
     }
 
     .focused .form-label {
         transform: translateY(-100%);
-        font-size: 14px;
+        font-size: 12px;
     }
 
     input[type=text],
     input[type=number],
     input[type=email] {
         height: 46px;
+        font-size: 15px;
     }
 
     select {
@@ -442,11 +443,11 @@ select {
         margin-bottom: 20px;
         .notice_head {
             line-height: 32px;
-            font-size: 36px;
+            font-size: 25px;
         }
 
         .notice_content {
-            font-size: 15px;
+            font-size: 17px;
             line-height: 20px;
         }
     }
@@ -456,8 +457,10 @@ select {
         padding-left: 10px;
         padding-right: 10px;
 
-        input[type=text] {
-            font-size: 22px;
+        input[type=number] {
+            font-size: 15px;
+            height: 41px;
+            padding: 2px 5px 2px 5px;
         }
     }
 

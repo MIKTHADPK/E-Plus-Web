@@ -15,6 +15,13 @@
     <meta name="keywords" content="English,Hindi,Arabic,Urdu,Tamil,Telugu">
     <meta name="author" content="E Plus">
 
+     <!-- Jquery cdn -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+     <!-- Ajax for prevent form -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -47,17 +54,21 @@
                     <div class="buttons">
                         <div class="notice">
                             <div class="notice_head">
-                                Book a call<br/>Now!
+                                Book a call<br />Now!
                             </div>
                             <div class="notice_content">
-                                Simply leave your contact number,<br/>our executive will call you ASAP.
+                                Simply leave your contact number,<br />our executive will call you ASAP.
                             </div>
                         </div>
-                        <div class="call_back_number">
-                            <input type="number" name="country_code" id="" placeholder="+91" style="width:20%; margin-right: 10px;">
-                            <input type="number" name="mobile_number" id="" placeholder="Moble Numer">
-                        </div>
-                        <a href="" class="e-button"><span>Book a call</span> <i class="fa fa-angle-right"></i></a>
+                        <form id="reristration-form">
+                            <div class="call_back_number">
+                                <input type="number" name="country_code" id="" placeholder="91" value="91"
+                                    style="width:20%; margin-right: 10px;" required>
+                                <input type="number" name="mobile_number" id="" placeholder="Moble Numer" required>
+                            </div>
+                            <button class="e-button"><span>Book a call</span> <i
+                                    class="fa fa-angle-right"></i></button>
+                        </form>
                     </div>
 
                 </div>
@@ -67,6 +78,30 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script>
+        // prevent form submitation
+
+        $("#reristration-form").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"https://script.google.com/macros/s/AKfycbxR0bNSoIwFRgfeWu0uXAkrd8rNB6wZLGQSk527e92Idn1ZqY1KRXdTGvfuI7lNw3FQ/exec",
+                data:$("#reristration-form").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("Your Registration Complited")
+                    // fomrmSuccess()
+                    // setTimeout($('#reristration-form')[0].reset(),0);
+                    $('#reristration-form')[0].reset();
+                },
+                error:function (err){
+                    alert("Something Error")
+    
+                }
+            })
+        })
+       
+    </script>
 </body>
 
 </html>

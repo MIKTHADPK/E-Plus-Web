@@ -15,6 +15,13 @@
     <meta name="keywords" content="English,Hindi,Arabic,Urdu,Tamil,Telugu">
     <meta name="author" content="E Plus">
 
+    <!-- Jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+    <!-- Ajax for prevent form -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,14 +45,14 @@
                     <img src="../images/Registration_boy.svg" alt="image" style="transform: rotateY(180deg);">
                 </div>
                 <div class="content">
-                    <div class="brand-ribbon">
+                    <!-- <div class="brand-ribbon">
                         <div class="brand-name">
                             <h3 class="main-name">eplus</h3>
                             <h4 class="sub-name">junior</h4>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="buttons">
-                        <form action="">
+                        <form id="reristration-form">
                             <div class="form-group">
                                 <label for="Name" class="form-label">Name</label>
                                 <input type="text" name="Name" id="Name" class="form-input" required>
@@ -73,7 +80,7 @@
                             </div>
 
                             <div class="form-group">
-                                <select name="Gender" id="">
+                                <select name="Board" id="">
                                     <option value="">Select Board</option>
                                     <option value="CBSE">CBSE</option>
                                     <option value="State-English">State-English</option>
@@ -82,7 +89,7 @@
                             </div>
 
                             <div class="form-group">
-                                <select name="Gender" id="">
+                                <select name="Class" id="">
                                     <option value="">Select Class</option>
                                     <option value="1">1</option>
                                     <option value="2">2</option>
@@ -111,6 +118,29 @@
 
     <!-- Script to form input animation style-->
     <script src="../../registration/js/style.js"></script>
+
+    <script>
+        // prevent form submitation
+
+        $("#reristration-form").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"https://script.google.com/macros/s/AKfycby9TbFbmFrNoIQnAXjyhyK57T-k22db2G77IXnAgIiiZglEX9gIa44oEDPZIxXxdJOd/exec",
+                data:$("#reristration-form").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("Your Registration Complited")
+                    // fomrmSuccess()
+                    setTimeout($('#reristration-form')[0].reset(),0);
+                },
+                error:function (err){
+                    alert("Something Error")
+    
+                }
+            })
+        })
+       
+    </script>
 
 </body>
 
