@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/x-icon" href="../assets/images/Eplus_icon.png">
+    <meta property="og:image" content="https://eplushub.com/junior/eplus_junior_thumb.jpg">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="885">
+    <meta property="og:image:height" content="442">
+    <meta name="description" content="EPLUS Hub">
+    <meta name="keywords" content="English,Hindi,Arabic,Urdu,Tamil,Telugu">
+    <meta name="author" content="E Plus">
+
+    <!-- Jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+    <!-- Ajax for prevent form -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../../assets/fonts/fonts.css">
+    <link rel="stylesheet" href="../../css/style.css">
+
+    <title>E PLUS JUNIOR</title>
+</head>
+
+<body>
+
+    <div class="container-flued">
+        <div class="row">
+            <div class="col-sm-12 col-md-4 bg-design"></div>
+            <div class="col-sm-12 col-md-8 main">
+                <div class="image-container">
+                    <img src="../../images/Registration_Success_Book.svg" alt="">
+                </div>
+                <div class="content">
+                    <div class="brand-ribbon">
+                        <div class="brand-name">
+                            <h3 class="main-name">eplus</h3>
+                            <h4 class="sub-name">junior</h4>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <div class="notice">
+                            <div class="notice_head">
+                                Registration<br />successful!
+                            </div>
+                            <div class="notice_content">
+                                Your registration has been successfully completed. <br />
+                                <span>Our team will contact you as soon as possible!</span>
+                            </div>
+                        </div>
+                        <a href="https://eplushub.com/junior/" style="height: 25px;padding: 2px 10px;"><i class="fa fa-angle-left"></i>Back to home</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script>
+        // prevent form submitation
+
+        $("#reristration-form").submit((e) => {
+            e.preventDefault()
+            $.ajax({
+                url: "https://script.google.com/macros/s/AKfycbxR0bNSoIwFRgfeWu0uXAkrd8rNB6wZLGQSk527e92Idn1ZqY1KRXdTGvfuI7lNw3FQ/exec",
+                data: $("#reristration-form").serialize(),
+                method: "post",
+                success: function (response) {
+                    alert("Your Registration Complited")
+                    // fomrmSuccess()
+                    // setTimeout($('#reristration-form')[0].reset(),0);
+                    $('#reristration-form')[0].reset();
+                },
+                error: function (err) {
+                    alert("Something Error")
+
+                }
+            })
+        })
+
+    </script>
+</body>
+
+</html>

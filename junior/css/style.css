@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -152,6 +153,9 @@ select {
   font-size: 22px;
 }
 
+.notice {
+  font-family: "Poppins", sans-serif;
+}
 .notice .notice_head {
   text-align: center;
   z-index: 0;
@@ -164,6 +168,9 @@ select {
   font-size: 36px;
   line-height: 54px;
   font-weight: 500;
+}
+.notice .notice_content span {
+  font-weight: 400;
 }
 
 .call_back_number {

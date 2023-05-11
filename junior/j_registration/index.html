@@ -129,9 +129,10 @@
                 data:$("#reristration-form").serialize(),
                 method:"post",
                 success:function (response){
-                    alert("Your Registration Complited")
+                    // alert("Your Registration Complited")
                     // fomrmSuccess()
                     setTimeout($('#reristration-form')[0].reset(),0);
+                    window.location.href="https://eplushub.com/junior/j_registration/success/"
                 },
                 error:function (err){
                     alert("Something Error")
